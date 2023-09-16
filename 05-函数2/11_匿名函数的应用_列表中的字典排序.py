@@ -12,10 +12,14 @@ user_list = [
 # 列表.sort(key=lambda x: x['键'])
 
 
-def func(x):
-    return x['age']
 
 
+# 方法一：实际当中用lambdada多
 user_list.sort(key=lambda x: x['age'])
-# user_list.sort(key=func)
 print(user_list)
+
+# 方法二
+# def func(x):
+#     return x['age']
+# user_list.sort(key=func)
+# print(user_list)
